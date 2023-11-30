@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:background="@drawable/signup_header_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="260dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CREATE YOUR ACCOUNT"
+                android:fontFamily="@font/inter"
+                android:textColor="#ffffff"
+                android:letterSpacing="0.1"
+                android:lineSpacingMultiplier="1.4"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_vertical">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#BFBFBF"
+                android:drawableLeft="@drawable/fullname_input_icon"
+                android:hint="Full Name"
+                android:textColor="#BFBFBF"
+                android:drawablePadding="10dp">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_marginTop="30dp"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#BFBFBF"
+            android:drawableLeft="@drawable/email_input_icon"
+            android:hint="Email"
+            android:textColor="#BFBFBF"
+            android:drawablePadding="10dp">
+        </EditText>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="30dp"
+            app:boxBackgroundMode="none"
+            app:hintTextAppearance="#BFBFBF"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassword"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:hint="Enter Password"
+                android:backgroundTint="#BFBFBF"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:drawableEnd="@drawable/password_visible"
+                android:drawableStart="@drawable/password_input_icon"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="30dp"
+            app:boxBackgroundMode="none"
+            app:hintTextAppearance="#BFBFBF"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="330dp"
+                android:layout_height="50dp"
+                android:hint="Confirm Password"
+                android:backgroundTint="#BFBFBF"
+                android:inputType="textPassword"
+                android:drawablePadding="10dp"
+                android:drawableEnd="@drawable/password_visible"
+                android:drawableStart="@drawable/password_input_icon"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+</LinearLayout>

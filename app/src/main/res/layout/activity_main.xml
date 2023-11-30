@@ -4,118 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-
-    <LinearLayout
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/home_framelayout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/header_background"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
 
-        <androidx.appcompat.widget.Toolbar
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/previous"
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#00ffffff"
-                    android:drawableLeft="@drawable/navmenu_button"
-                    android:paddingLeft="2dp">
-                </Button>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1">
-                </LinearLayout>
-
-                <Button
-                    android:layout_width="40dp"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#00ffffff"
-                    android:drawableLeft="@drawable/setting_button"
-                    android:paddingLeft="2dp">
-                </Button>
-            </LinearLayout>
-        </androidx.appcompat.widget.Toolbar>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="95dp"
-            android:layout_marginHorizontal="30dp"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="60dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:foregroundGravity="top"
-                android:src="@drawable/profile_picture"></ImageView>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_marginHorizontal="15dp"
-                android:layout_marginTop="14dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/inter"
-                    android:text="Johan Kristianto"
-                    android:textColor="@color/white"
-                    android:textSize="18sp"
-                    android:textStyle="bold"></TextView>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#00ffffff"
-                    android:fontFamily="@font/inter"
-                    android:paddingLeft="1dp"
-                    android:paddingTop="0dp"
-                    android:text="School Director"
-                    android:textSize="12sp"
-                    app:icon="@drawable/directorprofile_image"></Button>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center_vertical|right">
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:text="Edit Profile"
-                    android:textStyle="bold"
-                    android:textSize="11sp"
-                    android:textColor="#FF1E12"
-                    android:fontFamily="@font/inter"
-                    android:backgroundTint="#ffffff">
-                </Button>
-            </LinearLayout>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-    </LinearLayout>
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
-        android:layout_height="80dp">
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:background="@drawable/bottom_navbar"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:menu="@menu/menu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </LinearLayout>
 

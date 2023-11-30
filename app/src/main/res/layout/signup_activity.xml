@@ -122,18 +122,6 @@
             android:layout_marginTop="30dp"
             app:boxBackgroundMode="none"
             app:hintTextAppearance="#BFBFBF"
-            android:gravity="center_horizontal">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/confirmPassword3"
-                android:layout_width="330dp"
-                android:layout_height="50dp"
-                android:hint="Confirm Password"
-                android:backgroundTint="#BFBFBF"
-                android:inputType="textPassword"
-                android:drawablePadding="10dp"
-                android:drawableEnd="@drawable/password_visible"
-                android:drawableStart="@drawable/password_input_icon"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            android:gravity="center_horizontal"/>
     </LinearLayout>
 </LinearLayout>
